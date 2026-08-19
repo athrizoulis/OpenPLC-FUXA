@@ -1,0 +1,207 @@
+[
+  {
+    "id": "0",
+    "name": "FUXA Server",
+    "type": "FuxaServer",
+    "property": {},
+    "polling": 1000,
+    "enabled": true,
+    "tags": {
+      "t_23f1fc0a-e5c8403e": {
+        "id": "t_23f1fc0a-e5c8403e",
+        "name": "PLC Connection Status",
+        "label": "PLC Connection Status",
+        "value": null,
+        "type": "number",
+        "memaddress": "d_1d28be1f-74074589",
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "init": "",
+        "sysType": 1,
+        "timestamp": 1786525648135
+      },
+      "t_5116a4fd-b0744d0a": {
+        "id": "t_5116a4fd-b0744d0a",
+        "name": "OpenPLC Connection Status",
+        "label": "OpenPLC Connection Status",
+        "value": "",
+        "type": "number",
+        "memaddress": "d_3d25cfcf-0a2647a8",
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "init": "",
+        "sysType": 1
+      }
+    }
+  },
+  {
+    "id": "d_3d25cfcf-0a2647a8",
+    "name": "OpenPLC",
+    "enabled": true,
+    "property": {
+      "address": "192.168.56.21:502",
+      "port": null,
+      "slot": null,
+      "rack": null,
+      "baudrate": 9600,
+      "databits": 8,
+      "stopbits": 1,
+      "parity": "None",
+      "connectionOption": "TcpPort",
+      "delay": 10,
+      "socketReuse": "Reuse",
+      "forceFC16": false,
+      "slaveid": "1"
+    },
+    "type": "ModbusTCP",
+    "polling": 1000,
+    "tags": {
+      "t_b13ee39c-abd94607": {
+        "id": "t_b13ee39c-abd94607",
+        "name": "Tank_Level_Modbus",
+        "type": "Float32",
+        "memaddress": "400000",
+        "address": 2089,
+        "divisor": null,
+        "format": 6,
+        "daq": {
+          "enabled": false,
+          "restored": false
+        },
+        "scale": null,
+        "scaleReadFunction": null,
+        "scaleWriteFunction": null,
+        "description": "Tank Level",
+        "unsPath": null
+      },
+      "t_fa9d5ccc-94de4f6d": {
+        "id": "t_fa9d5ccc-94de4f6d",
+        "name": "Pump_Command_Modbus",
+        "type": "Bool",
+        "memaddress": "000000",
+        "address": 81,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Pump Command"
+      },
+      "t_f4d85bab-b757489a": {
+        "id": "t_f4d85bab-b757489a",
+        "name": "Valve_Command_Modbus",
+        "type": "Bool",
+        "memaddress": "000000",
+        "address": 82,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Valve Command"
+      },
+      "t_4655bafb-d0a44a1c": {
+        "id": "t_4655bafb-d0a44a1c",
+        "name": "Tank_Flow_In_Modbus",
+        "type": "Float32",
+        "memaddress": "400000",
+        "address": 2097,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Tank Flow In"
+      },
+      "t_c1177649-2b244e9d": {
+        "id": "t_c1177649-2b244e9d",
+        "name": "Tank_Flow_Out_Modbus",
+        "type": "Float32",
+        "memaddress": "400000",
+        "address": 2101,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Tank Flow Out"
+      },
+      "t_1803221c-0a2341e7": {
+        "id": "t_1803221c-0a2341e7",
+        "name": "Tank_High_Alarm_Modbus",
+        "type": "Bool",
+        "memaddress": "000000",
+        "address": 85,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Tank High Alarm"
+      },
+      "t_9faeb54a-f82d48ab": {
+        "id": "t_9faeb54a-f82d48ab",
+        "name": "Tank_Low_Alarm_Modbus",
+        "type": "Bool",
+        "memaddress": "000000",
+        "address": 86,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Tank Low Alarm"
+      },
+      "t_02c25fdc-b9464580": {
+        "id": "t_02c25fdc-b9464580",
+        "name": "Pump_Status_Modbus",
+        "type": "Bool",
+        "memaddress": "000000",
+        "address": 83,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Pump Status"
+      },
+      "t_e0fbbaed-4b7841ac": {
+        "id": "t_e0fbbaed-4b7841ac",
+        "name": "Valve_Status_Modbus",
+        "type": "Bool",
+        "memaddress": "000000",
+        "address": 84,
+        "divisor": null,
+        "daq": {
+          "enabled": false,
+          "interval": 60,
+          "changed": false,
+          "restored": false
+        },
+        "description": "Valve Status"
+      }
+    }
+  }
+]
