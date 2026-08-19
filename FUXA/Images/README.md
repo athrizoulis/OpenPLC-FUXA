@@ -1,1 +1,1 @@
-## FUXA server runtime images
+## FUXA server images
