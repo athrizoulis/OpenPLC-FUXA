@@ -8,4 +8,6 @@ devices/
 pous/  
 project.json  
 
-Load the project into OpenPLC-Editor and spend some time familiarizing your self with the UI.
+Load the project into OpenPLC-Editor and spend some time familiarizing your self with the UI.  
+If you get an increasing number of "Overruns" in the Configuration-Devices window, it is not something to worry about.  
+A restart of the VM usually fixes it.
