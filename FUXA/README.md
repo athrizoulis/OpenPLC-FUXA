@@ -1,7 +1,8 @@
 ## FUXA server connections and project
 
 Check the images to get an idea how the FUXA server behaves when first installed, up to the point where it is fully functional.  
-Attached is also an image of the important FUXA to OpenPLC-runtime connection.
+Also attached are images of the important FUXA to OpenPLC-runtime connection details and the final properly connected pair.
+
 
 Start with importing the fuxa-connections.json.  
 Make sure FUXA communicates with the OpenPLC-runtime-MODBUS server.  
